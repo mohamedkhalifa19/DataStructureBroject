@@ -454,19 +454,19 @@ public:
     void display()
     {
         cout << "Your stack is [ ";
-        for (int i = 0; i <= topInd; i++)
+        for (int i =  topInd ; i >=0; i--)
         {
             if (isEmpty())
             {
                 break;
             }
             cout << arr[i];
-            if (i != topInd)
+            if (i >0)
             {
-                cout << ", ";
+                cout << ",";
             }
         }
-        cout << " ]" << endl;
+        cout << "]" << endl;
     }
 };
 
